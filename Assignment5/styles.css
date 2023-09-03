@@ -1,0 +1,44 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:maroon;
+}
+
+.pricing-plan {
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    
+}
+
+.pricing-plan h2 {
+    color: #333;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+button {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+.plan{
+    background-color: #2ecc71;
+    margin-top: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+    height: 320px;
+}
