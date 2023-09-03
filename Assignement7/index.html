@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Magazine Layout</title>
+    <style>
+        /* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and styles to the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Create a grid layout for articles and ads */
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+/* Style individual articles */
+.article {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.article h2 {
+    font-size: 1.5rem;
+}
+
+/* Style advertisements */
+.advertisement {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.advertisement h2 {
+    font-size: 1.2rem;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Magazine</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <article class="article">
+            <h2 style="text-align: center;">The Importance of Scheduling Nothing</h2>
+        </br>
+            <p>If you were to see my calendar, you'd probably notice a host of time slots greyed out but with no indication of what's going on. There is no problem with my Outlook or printer. The grey sections reflect "buffers," or time periods I've purposely kept clear of meetings.
+
+                In aggregate, I schedule between 90 minutes and two hours of these buffers every day (broken down into 30- to 90-minute blocks). It's a system I developed over the last several years in response to a schedule that was becoming so jammed with back-to-back meetings that I had little time left to process what was going on around me or just think.
+                
+                At first, these buffers felt like indulgences. I could have been using the time to catch up on meetings I had pushed out or said "no" to. But over time I realized not only were these breaks important, they were absolutely necessary in order for me to do my job.</p>
+            </br>
+            <center><img src="image1.jpg" alt="Article Image 1"></center>
+        </article>
+        
+        <article class="article">
+            <h2 style="text-align: center;">Busy is the New Stupid</h2>
+        </br>
+            <p>I'll attempt to make this a short post, because you're busy, and I'm busy too. Really busy.  It's one of the primary ways we let people know we are important. Because if we aren't busy then we aren't important, right?  
+                Busy isn't cool.  In fact, <b><i>BUSY IS THE NEW STUPID.</i></b>
+
+Being busy makes us hurried, creates short-sightedness, expands blind spots, increases careless mistakes and results in missed opportunities that we can't get back. Busyness creates more woulda, coulda and shoulda than anything else in our life - which ultimately leads to regret.  And regret sucks.
+            </p>
+        </br>
+            <img src="image2.jpg" alt="Article Image 2">
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Magazine</p>
+    </footer>
+</body>
+</html>
