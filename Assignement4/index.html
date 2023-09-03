@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <style>
+        /* Add some basic styling */
+        .faq-item {
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .faq-question {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            text-align: center;
+            color:red;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            max-width: 400px; /* Adjust the width as needed */
+            margin: 0 auto; /* Center the container horizontally */
+            padding: 10px;
+        }
+
+        #search {
+    flex: 1; /* Takes up all available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Style for the search button */
+#search-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Hover effect for the search button */
+#search-button:hover {
+    background-color: #0056b3;
+}
+    
+    </style>
+</head>
+<body style="background-color: brown;">
+
+    <div style="text-align: center;">
+        <img src="faq.jpg" width="600" height="200">
+    </div>
+    <div class="search-container" >
+        <input type="text" id="search" placeholder="Search...">
+        <button type="button" id="search-button">Search</button>
+    </div>
+
+    <div class="faq-item" >
+        <div class="faq-question" onclick="toggleAnswer(1)" style="text-align: center;">Q1: What is Lorem Ipsum?</div>
+    </br>
+        <div class="faq-answer" id="answer1" style="font-style: italic; font-size: large;"><b>A1: Lorem Ipsum is simply dummy text of the printing and typesetting industry.</b></div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(2)" style="text-align: center;">Q2: Why do we use it?</div>
+    </br><div class="faq-answer" id="answer2" style="font-style: italic; font-size: large;"><b>A2: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</b></div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(3)" style="text-align: center;">Q3: Where does it come from?</div>
+    </br><div class="faq-answer" id="answer3" style="font-style: italic; font-size: large;"><b>A3: Contrary to popular belief, Lorem Ipsum is not simply random text.</b></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(4)" style="text-align: center;">Q3: Where does it come from?</div>
+    </br><div class="faq-answer" id="answer4" style="font-style: italic; font-size: large;"><b>A3: Contrary to popular belief, Lorem Ipsum is not simply random text.</b></div>
+    </div>
+
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById('answer' + id);
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
